@@ -4,6 +4,17 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
+		function searchEngine() {
+			let actions = {
+				google: https://www.google.com/search,
+				DuckDuckGo: https://duckduckgo.com/,
+				Bing: https://www.bing.com/search,
+				Ask: https://www.ask.com/web
+			}
+
+			let form = document.getElementById("searchForm");
+			let selected = //fix
+		}
     window.addEventListener("load", function(){
         // TODO: register the handler
     });
@@ -14,6 +25,15 @@
 
 	<form id="searchForm">
     <!-- TODO: add form elements -->
+		<input type="text" name="q">
+		<!-- make radio buttons for each engine-->
+		<label><input type="radio" id="google" name="engine" value="google"></label>
+		<label><input type="radio" id="duckDuckGo" name="engine" value="duckDuckGo"></label>
+		<label><input type="radio" id="bing" name="engine" name="bing"></label>		
+		<label><input type="radio" id="ask" name="engine" name="ask"></label>
+		<!--add a submit button -->
+		<input type="submit" value="Go!">
 	</form>
 
 </body>
+
